@@ -1,3 +1,5 @@
+import pandas as pd
+
 def describir_datos(df):
     '''
     Descripción completa de los datos del dataframe
