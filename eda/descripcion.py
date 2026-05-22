@@ -14,6 +14,7 @@ def describir_datos(df):
 
 
 def resumir_datos(df):
+    import pandas as pd 
     '''
     Resumen de los datos del dataframe:
         Tipo: Tipo de dato
