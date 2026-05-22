@@ -4,13 +4,18 @@ Funciones auxiliares para EDA, visualización y preprocesamiento.
 
 ## Instalación
 
+### Clonando el repositorio
+
 ```bash
+git clone https://github.com/eguzki-dm/eguzklean.git
+cd Eguzklean
 pip install .
-```
+Instalación directa desde GitHub
+pip install git+https://github.com/eguzki-dm/eguzklean.git
 
 ## Módulos
 
-### `eda`
+### 'eda'
 
 | Función | Descripción |
 |---------|-------------|
@@ -23,7 +28,7 @@ pip install .
 | `detectar_outliers_zscore(df)` | Detecta outliers usando Z-Score |
 | `eliminar_outliers_zscore(df, outliers_df)` | Elimina outliers según resultados Z-Score |
 
-### `visualizacion`
+### 'visualizacion'
 
 | Función | Descripción |
 |---------|-------------|
@@ -37,3 +42,4 @@ pip install .
 ## Dependencias
 
 pandas, numpy, scipy, matplotlib, seaborn
+```
