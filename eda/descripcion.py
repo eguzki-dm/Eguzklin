@@ -1,4 +1,8 @@
 import pandas as pd
+from IPython.display import display
+from scipy.stats import shapiro
+import pandas as pd
+import numpy as np
 
 def describir_datos(df):
     '''
@@ -24,10 +28,6 @@ def resumir_datos(df):
         'Cardinalidad': df.nunique()
     })
     return resumen
-
-from scipy.stats import shapiro
-import pandas as pd
-import numpy as np
 
 
 def super_resumen(
