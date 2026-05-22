@@ -251,13 +251,9 @@ def super_resumen(
     resumen = {
 
         'dtypes': dtypes_df,
-
         'nulls': nulls_df,
-
         'cardinality': cardinalidad_df,
-
         'normality': normalidad_df,
-
         'strong_correlations': corr_pairs
     }
 
