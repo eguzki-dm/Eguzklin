@@ -8,5 +8,3 @@ __pycache__/
 *.egg-info/
 dist/
 build/
-__old_eda/
-__old_visualizacion/
