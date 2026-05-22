@@ -14,7 +14,6 @@ def describir_datos(df):
 
 
 def resumir_datos(df):
-    import pandas as pd 
     '''
     Resumen de los datos del dataframe:
         Tipo: Tipo de dato
@@ -261,3 +260,10 @@ def super_resumen(
     }
 
     return resumen
+
+
+if __name__ == "__main__":
+    import pandas as pd
+    df = pd.read_csv("../data/hormigon.csv")
+    res= resumir_datos(df)
+    print(res)
