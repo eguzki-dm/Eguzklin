@@ -1,8 +1,7 @@
 import pandas as pd
-from IPython.display import display
-from scipy.stats import shapiro
-import pandas as pd
 import numpy as np
+from scipy.stats import shapiro
+
 
 def describir_datos(df):
     '''
@@ -12,6 +11,7 @@ def describir_datos(df):
     descripcion['Nulos'] = df.isnull().sum()
     descripcion['Tipos'] = df.dtypes
     return descripcion
+
 
 def resumir_datos(df):
     '''
@@ -90,7 +90,7 @@ def super_resumen(
         'Tipo': df.dtypes.astype(str)
     })
 
-    display(dtypes_df)
+    print(dtypes_df.to_string(index=False))
 
     # =====================================================
     # NULOS
@@ -115,7 +115,7 @@ def super_resumen(
         ascending=False
     )
 
-    display(nulls_df)
+    print(nulls_df.to_string(index=False))
 
     # =====================================================
     # DUPLICADOS
@@ -147,7 +147,7 @@ def super_resumen(
         ascending=False
     )
 
-    display(cardinalidad_df)
+    print(cardinalidad_df.to_string(index=False))
 
     # =====================================================
     # NORMALIDAD
@@ -199,7 +199,7 @@ def super_resumen(
         normalidad_resultados
     )
 
-    display(normalidad_df)
+    print(normalidad_df.to_string(index=False))
 
     # =====================================================
     # CORRELACIONES FUERTES
@@ -244,7 +244,7 @@ def super_resumen(
         ascending=False
     )
 
-    display(corr_pairs)
+    print(corr_pairs.to_string(index=False))
 
     # =====================================================
     # RETURN

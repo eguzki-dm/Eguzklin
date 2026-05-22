@@ -1,3 +1,7 @@
+import pandas as pd
+from scipy.stats import shapiro
+
+
 def test_normalidad(
     df,
     alpha=0.05,

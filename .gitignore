@@ -1,2 +1,12 @@
-.venv
+.venv/
+__pycache__/
+*.pyc
+*.pyo
 *.png
+.vscode/
+.idea/
+*.egg-info/
+dist/
+build/
+__old_eda/
+__old_visualizacion/

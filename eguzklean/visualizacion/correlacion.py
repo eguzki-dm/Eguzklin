@@ -143,6 +143,6 @@ def heatmap_corr_plot(df):
 
 if __name__ == "__main__":
     import pandas as pd
-    df = pd.read_csv("..\data\hormigon.csv")
+    df = pd.read_csv("../data/hormigon.csv")
     heatmap_corr_plot(df)
     plt.savefig('heatmap.png')
