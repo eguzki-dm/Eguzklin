@@ -25,8 +25,7 @@ def resumir_datos(df):
         'Tipo': df.dtypes,
         'Nulos': df.isnull().sum(),
         'Duplicados': df.duplicated().sum(),
-        'Cardinalidad': df.nunique()
-    })
+        'Cardinalidad': df.nunique()})
     return resumen
 
 
